@@ -29,9 +29,10 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="admin"
+            android:background="#051996"
             android:layout_marginLeft="20dp"
             android:textStyle="bold"
-            android:textColor="#000"
+            android:textColor="#ffffff"
             android:textSize="20dp"
             android:layout_marginTop="20dp"/>
         <Button
@@ -40,8 +41,9 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="staff"
+            android:background="#051996"
             android:layout_marginLeft="30dp"
-            android:textColor="#000"
+            android:textColor="#ffffff"
             android:layout_marginTop="20dp"
             android:textStyle="bold"
             android:textSize="20dp"/>
