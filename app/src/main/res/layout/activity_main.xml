@@ -70,12 +70,14 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SUBMIT"
+            android:text="Submit"
             android:layout_marginTop="10dp"
             android:layout_gravity="center"
             android:padding="10dp"
-            android:textColor="#000"
+            android:background="#051996"
+            android:textColor="#ffffff"
             android:textSize="20dp"
+            android:textAllCaps="false"
             android:textStyle="bold"/>
 
     </LinearLayout>
