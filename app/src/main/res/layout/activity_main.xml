@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:background="@drawable/rect"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -9,8 +15,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/rect"
     tools:context="techpalle.com.srinathteamapp.MainActivity">
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -50,28 +56,47 @@
     </LinearLayout>
 
 
-    <LinearLayout
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+                <EditText
+                    android:drawablePadding="12sp"
+                    android:drawableLeft="@drawable/user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="user name "
+                    android:textColor="#000"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content" >
         <EditText
+            android:drawableLeft="@drawable/lock"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="user name "
-            android:layout_marginTop="35dp"
-            android:textColor="#000"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:drawablePadding="12sp"
             android:hint="password"
-            android:layout_marginTop="35dp"
+            android:textColorHint="#2a972a"
             android:textColor="#000"/>
+    </android.support.design.widget.TextInputLayout>
+
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:padding="10dp"
             android:background="#051996"
@@ -80,17 +105,14 @@
             android:textAllCaps="false"
             android:textStyle="bold"/>
 
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/password"
-            android:layout_margin="10dp"
+            android:layout_margin="20dp"
             android:gravity="center"
             android:textSize="25sp"
             android:textColor="@color/colorPrimaryDark"
@@ -104,8 +126,8 @@
             android:textStyle="bold"
             android:textSize="25sp"
             android:textColor="@color/colorPrimaryDark"
-            style="@style/Base.TextAppearance.AppCompat.Large"/>
-    </LinearLayout>
+            style="@style/Base.TextAppearance.AppCompat.Caption"/>
 
 
 </LinearLayout>
+</ScrollView>
